@@ -1,0 +1,30 @@
+#include<iostream>
+
+
+int main()
+{
+	char answer;
+
+	std::cout << "请问可以格式化您的硬盘吗？！【Y/N】" << "\n";
+	std::cin>>answer;
+
+	switch( answer )
+	{
+	case'Y':
+	case'y':
+		std::cout<<"随便格式化硬盘是不好的~"<<"\n";
+		break;
+	case'N':
+	case'n':
+		std::cout<<"您的选择是明智的！"<<"\n";
+		break;
+
+	default:
+		std::cout<<"您的输入不符合要求！！！"<<"\n";
+		break;
+	}
+	std::cin.ignore(100,'\n');
+	std::cout<<"输入任何字符结束程序！""\n";
+	std::cin.get();
+	return 0;
+}
